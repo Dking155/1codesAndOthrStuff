@@ -16,4 +16,4 @@ def indexToLetter(idx):
         print("error", idx, "is too small")
     else:
         letter = alphabet[idx]
-     return letter
+    return letter
