@@ -64,7 +64,7 @@ else:
 
 # character functions
 
-print(ord("B"))
+print(ord("5"))
 
 print(chr(97+13))
 
