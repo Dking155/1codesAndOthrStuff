@@ -60,3 +60,12 @@ if "y" in name:
     print("the letter y is in name")
 else:
     print("the letter y is not in name")
+
+
+# character functions
+
+print(ord("B"))
+
+print(chr(97+13))
+
+print(str(12548))
