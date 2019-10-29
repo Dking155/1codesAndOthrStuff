@@ -17,6 +17,7 @@ def scramble2Encrypt(plainText):
             cipherText = oddChars + evenChars
             return cipherText
 
+
 def scramble2Decrypt(cipherText):
     halfLength = len(cipherText) // 2
     evenChars = cipherText[halfLength:]
@@ -28,6 +29,10 @@ def scramble2Decrypt(cipherText):
         plainText = plainText + oddChars[i]
 
     if len(oddChars) < len(evenChars):
-         plainText = plainText + evenChars[-1]
+        plainText = plainText + evenChars[-1]
 
     return plainText
+
+def encryptMessage():
+    msg = input("Enter the message to encrypt: ")
+    cipherText = scramble2Encrypt()

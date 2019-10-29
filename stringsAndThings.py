@@ -78,4 +78,4 @@ print(indexToLetter(10))
 
 from crypto import *
 
-print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
+encryptMessage()
