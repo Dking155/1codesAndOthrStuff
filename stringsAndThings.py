@@ -3,7 +3,6 @@
 
 # Concatenation
 # Put 2 or more strings together
-from crypto import scramble2Encrypt
 
 firstname = "Fred"
 lastname = "Flintstone"
@@ -76,4 +75,11 @@ from mapper import *
 
 print(letterToIndex('P'))
 print(indexToLetter(10))
+
+
+from crypto import *
+
+print(caesarEncrypt(5))
+print(caesarDecrypt(5))
+
 

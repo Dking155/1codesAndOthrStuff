@@ -33,6 +33,7 @@ def scramble2Decrypt(cipherText):
 
     return plainText
 
+
 # write a stripSpaces(text function here
 
 # write a caesarEncrypt(plainText, shift)
@@ -40,3 +41,33 @@ def scramble2Decrypt(cipherText):
 
 # Encrypt:ymj itl yzwsji tzy yt gj f rtsxyjw(shift 5)
 # Decrypt:The dog turned out to be a monster(shift 5)
+
+
+def caesarEncrypt(cipherText):
+    evenChars = ""
+    oddChars = ""
+    charCount = 0
+    for ch in cipherText:
+        if charCount % 2 == 0:
+            evenChars = evenChars + ch
+        else:
+            oddChars = oddChars + ch
+            charCount = charCount + 1
+            cipherText = oddChars + evenChars
+            return cipherText
+
+
+def caesarDecrypt(cipherText):
+    halfLength = len(cipherText) // 2
+    evenChars = cipherText[halfLength:]
+    oddChars = cipherText[:halfLength]
+    plainText = ""
+
+    for i in range(halfLength):
+        plainText = plainText + evenChars[i]
+        plainText = plainText + oddChars[i]
+
+    if len(oddChars) < len(evenChars):
+        plainText = plainText + evenChars[-1]
+
+    return plainText
