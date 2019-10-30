@@ -33,6 +33,10 @@ def scramble2Decrypt(cipherText):
 
     return plainText
 
-def encryptMessage():
-    msg = input("Enter the message to encrypt: ")
-    cipherText = scramble2Encrypt()
+# write a stripSpaces(text function here
+
+# write a caesarEncrypt(plainText, shift)
+# write a caesarDecrypt(cipherText, shift)
+
+# Encrypt:ymj itl yzwsji tzy yt gj f rtsxyjw(shift 5)
+# Decrypt:The dog turned out to be a monster(shift 5)
